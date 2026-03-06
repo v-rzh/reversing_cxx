@@ -77,10 +77,17 @@ int main(void)
     hello_class.static_func();
     hello_class.set_integer(32);
     hello_class.set_ptr((void*)0xaaaaaaaa);
-    std::cout << "Integer:\t" << hello_class.get_integer() << std::endl;
-    std::cout << "Pointer:\t" << hello_class.get_ptr() << std::endl;
+
+    std::cout << "Integer:\t" << hello_class.get_integer()
+              << std::endl;
+    std::cout << "Pointer:\t" << hello_class.get_ptr()
+              << std::endl;
+
     hello_class.reset();
-    std::cout << "Reset integer:\t" << hello_class.get_integer() << std::endl;
-    std::cout << "Reset pointer:\t" << hello_class.get_ptr() << std::endl;
+
+    std::cout << "Reset integer:\t" << hello_class.get_integer()
+              << std::endl;
+    std::cout << "Reset pointer:\t" << hello_class.get_ptr()
+              << std::endl;
     return 0;
 }

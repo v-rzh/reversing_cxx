@@ -76,14 +76,31 @@ void HelloClass::reset(void)
 int main(void)
 {
     HelloClass *hello_class = new HelloClass();
+
     hello_class->set_integer(32);
-    std::cout << "Integer:\t" << hello_class->get_integer() << std::endl;
+
+    std::cout << "Integer:\t" << hello_class->get_integer()
+              << std::endl;
+
     hello_class->set_integer("67");
     hello_class->set_ptr((void*)0xaaaaaaaa);
-    std::cout << "Integer:\t" << hello_class->get_integer() << std::endl;
-    std::cout << "Pointer:\t" << hello_class->get_ptr() << std::endl;
+
+    std::cout << "Integer:\t" << hello_class->get_integer()
+              << std::endl;
+    std::cout << "Pointer:\t" << hello_class->get_ptr()
+              << std::endl;
+
     hello_class->reset();
-    std::cout << "Reset integer:\t" << hello_class->get_integer() << std::endl;
-    std::cout << "Reset pointer:\t" << hello_class->get_ptr() << std::endl;
+
+    std::cout << "Reset integer:\t"
+              << hello_class->get_integer()
+              << std::endl;
+    std::cout << "Reset pointer:\t"
+              << hello_class->get_ptr()
+              << std::endl;
+    /* Commented out for the lecture
+     * Uncomment to see how destruction works
+     */
+    // delete hello_class;
     return 0;
 }

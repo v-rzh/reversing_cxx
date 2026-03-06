@@ -15,11 +15,14 @@ int main(void)
 
     std::cout << "Name:\t\t" << ta.get_name() << std::endl;
     std::cout << "Age:\t\t" << ta.get_age() << std::endl;
-    std::cout << "Lecture:\t" << ta.get_lecture_name() << std::endl;
-    std::cout << "Duration:\t" << ta.get_lecture_duration() << std::endl;
+    std::cout << "Lecture:\t" << ta.get_lecture_name()
+              << std::endl;
+    std::cout << "Duration:\t" << ta.get_lecture_duration()
+              << std::endl;
     std::cout << "Year:\t\t" << ta.get_year() << std::endl;
     std::cout << "Dorm:\t\t" << ta.get_dorm() << std::endl;
-    std::cout << "Papers Num:\t" << ta.get_papers() << std::endl;
+    std::cout << "Papers Num:\t" << ta.get_papers()
+              << std::endl;
 
     return 0;
 }
